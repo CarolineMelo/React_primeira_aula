@@ -24,7 +24,7 @@ import CompPadrao, {Component1, Component2} from './components/Multi.js'
   );
 }*/
 
-export default App;
+//export default App;
 
 function App() {
   return <h1>Primeiro Componente</h1>
