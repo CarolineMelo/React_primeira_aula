@@ -1,33 +1,52 @@
 import logo from './logo.svg';
 import './App.css';
-import Primeiro from './componets/Primeiro'
-import CompPadrao, {Component1, Component2} from './components/Multi.js'
+import Primeiro from './Components/Primeiro'
+import CompPadrao, { Component1, Component2 } from './Components/Multi'
+import { Component } from 'react';
+import Estilos from './Components/estilos/Estilos'
+import MinMax from './Components/MinMax'
+import Testebotao from './Components/testebotao/Botao'
+import Titulo from './Components/Titulo'
+import Botao from './Components/Botao'
 
- /*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> Carol save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/*function App() {
+ return (
+   <div className="App">
+     <header className="App-header">
+       <img src={logo} className="App-logo" alt="logo" />
+       <p>
+         Edit <code>src/App.js</code> Carol save to reload.
+       </p>
+       <a
+         className="App-link"
+         href="https://reactjs.org"
+         target="_blank"
+         rel="noopener noreferrer"
+       >
+         Learn React
+       </a>
+     </header>
+   </div>
+ );
 }*/
 
 //export default App;
 
 function App() {
-  return <h1>Primeiro Componente</h1>
+  return (
+    <div>
+      <Primeiro/>
+      <Component1/>
+      <Component2/>
+      <Estilos/>
+      <MinMax min={2} max={10}/>
+      <Testebotao label="Comprar"/>
+      <Testebotao label="Adicionar ao carrinho"/>
+      <Testebotao label="Comprar"/>
+      <Titulo principal="olá"></Titulo>
+      <Botao/>
+    </div>
+  );
 }
 export default App
 
