@@ -9,7 +9,9 @@ import Testebotao from './Components/testebotao/Botao'
 import Titulo from './Components/Titulo'
 import Botao from './Components/Botao'
 import Contador from './Components/contador/Contador'
+import Carros from './Components/carros/Carros'
 import { Button } from 'react-bootstrap';
+import Pai from './Components/comunicacao/indireta/Pai';
 
 /*function App() {
  return (
@@ -34,7 +36,7 @@ import { Button } from 'react-bootstrap';
 
 //export default App;
 
-function App() {////
+function App() {
   return (
     <div>
       {/*<Primeiro/>
@@ -46,9 +48,20 @@ function App() {////
       <Testebotao label="Adicionar ao carrinho"/>
       <Testebotao label="Comprar"/>
       <Titulo principal="olá"></Titulo>
-      <Botao/>*/}
-
+      <Botao/>
       <Contador inicial={100}  passo={10} min={0} max={100}/>
+       <ul>
+        <Carros modelo="Volvo S60" marca="xxxx" cor="x" ano="2022" portas="4" combustivel="Híbrido" cambio="x" tam_aro="x" potecia="x" azul />
+        <Carros modelo="x" marca="x" cor="x" ano="2002 " portas="4" combustivel="Gasolina" cambio="x" tam_aro="xx" potecia="x" verde />
+        <Carros modelo="x" marca="x" cor="x" ano="2010 " portas="2" combustivel="Eletricidade" cambio="x" tam_aro="xx" potecia="x" rosa />
+      </ul>
+      
+        <Pai/>*/     }
+
+      <Pai/>
+
+     
+
     </div>
   );
 }
