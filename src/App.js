@@ -8,6 +8,8 @@ import MinMax from './Components/MinMax'
 import Testebotao from './Components/testebotao/Botao'
 import Titulo from './Components/Titulo'
 import Botao from './Components/Botao'
+import Contador from './Components/contador/Contador'
+import { Button } from 'react-bootstrap';
 
 /*function App() {
  return (
@@ -32,10 +34,10 @@ import Botao from './Components/Botao'
 
 //export default App;
 
-function App() {
+function App() {////
   return (
     <div>
-      <Primeiro/>
+      {/*<Primeiro/>
       <Component1/>
       <Component2/>
       <Estilos/>
@@ -44,7 +46,9 @@ function App() {
       <Testebotao label="Adicionar ao carrinho"/>
       <Testebotao label="Comprar"/>
       <Titulo principal="olá"></Titulo>
-      <Botao/>
+      <Botao/>*/}
+
+      <Contador inicial={100}  passo={10} min={0} max={100}/>
     </div>
   );
 }
