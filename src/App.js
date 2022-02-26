@@ -12,8 +12,17 @@ import Contador from './Components/contador/Contador'
 import Carros from './Components/carros/Carros'
 import { Button } from 'react-bootstrap';
 import Pai from './Components/comunicacao/indireta/Pai';
+import Familia from './Components/comunicacao/children/Familia';
+import Membro from './Components/comunicacao/children/Membro';
+import If from './Components/condicional/If';
+import ParImpar from './Components/condicional/ParImpar'
+import UsuarioLogado from './Components/condicional/UsuarioLogado';
+import CadastroNome from './Components/classe/CadastroNome'
+import If from './Components/condicional/If';
+import ListaProdutos from './Components/Lista/ListaProdutos';
 
-/*function App() {
+
+{/*function App() {
  return (
    <div className="App">
      <header className="App-header">
@@ -32,7 +41,7 @@ import Pai from './Components/comunicacao/indireta/Pai';
      </header>
    </div>
  );
-}*/
+}*/}
 
 //export default App;
 
@@ -56,11 +65,41 @@ function App() {
         <Carros modelo="x" marca="x" cor="x" ano="2010 " portas="2" combustivel="Eletricidade" cambio="x" tam_aro="xx" potecia="x" rosa />
       </ul>
       
-        <Pai/>*/     }
+        <Pai/>
+      
+         <Familia>
+        <Membro nome='Carol' sobrenome='Melo' />
+        <Membro nome='Carlos' sobrenome='Melo' />
+        <Membro nome='Luiz' sobrenome='Melo' />
 
-      <Pai/>
+      </Familia>
 
-     
+
+      <Familia>
+        <Membro nome='Miguel' sobrenome='Melo' />
+        <Membro nome='Noah' sobrenome='Melo' />
+        <Membro nome='Princess' sobrenome='Melo' />
+      </Familia>
+
+      <UsuaioLogado usuario={{nome: 'Carol', email:'s@gmail.com'}}>
+
+      <ParImpar num={3} />
+      <ParImpar num={2} />
+
+
+      <UsuarioLogado usuario={{ nome: 'Gui', email: 'gui@gui.com'}} />
+      <UsuarioLogado usuario={{ nome: 'Ana' }} />
+      <UsuarioLogado usuario={{ email: 'carlos@empresa.com'}} />
+      <UsuarioLogado usuario={null} />
+      <UsuarioLogado usuario={{}} />
+
+      */}
+
+
+
+
+
+
 
     </div>
   );
